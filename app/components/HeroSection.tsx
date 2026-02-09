@@ -32,7 +32,7 @@ export default function HeroSection() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="text-5xl  xl:text-[90px] 2xl:text-[130px] md:text-6xl font-semibold leading-[1.05] tracking-tight flex flex-col items-center"
         >
           <span className="text-transparent bg-linear-to-b from-neutral-400 to-white bg-clip-text">
@@ -56,27 +56,46 @@ export default function HeroSection() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 22 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
           className="text-neutral-400 text-sm font-semibold mt-7"
         >
           A beginner-friendly platform for mastering programming skills.
         </motion.p>
 
-        <div className="flex gap-4 mt-10">
-          <button className="rounded-full shadow-[inset_0_1px_2px_rgba(255,255,255,0.2),inset_0_-2px_4px_rgba(0,0,0,0.8)]  bg-neutral-800 px-6 py-3 text-white transition hover:bg-neutral-700">
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          className="flex gap-4 mt-10">
+          <motion.button
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="rounded-full shadow-[inset_0_1px_2px_rgba(255,255,255,0.2),inset_0_-2px_4px_rgba(0,0,0,0.8)]  bg-neutral-800 px-6 py-3 text-white transition hover:bg-neutral-700">
             Explore Courses
-          </button>
-          <button className="rounded-full shadow-[inset_0_-1px_2px_rgba(255,255,255,0.2),inset_0_1px_4px_rgba(0,0,0,0.8)]  bg-neutral-100 px-6 py-3 text-neutral-800 transition hover:bg-neutral-200">
+          </motion.button>
+          <motion.button
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1], delay: 0.35 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="rounded-full shadow-[inset_0_-1px_2px_rgba(255,255,255,0.2),inset_0_1px_4px_rgba(0,0,0,0.8)]  bg-neutral-100 px-6 py-3 text-neutral-800 transition hover:bg-neutral-200">
             View Roadmap
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
 
       <motion.div
+        initial={{ opacity: 0, y: 30, scale: 0.97 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
         style={{ y, width }}
-        className="relative mt-24 h-[500px] md:h-[600px] rounded-3xl border border-neutral-800 overflow-hidden shadow-2xl z-10"
+        className="relative mt-24 h-[300px] md:h-[500px] lg:h-[600px] rounded-3xl border border-neutral-800 overflow-hidden shadow-2xl z-10"
       >
         <Dashboard />
       </motion.div>

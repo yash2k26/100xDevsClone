@@ -16,7 +16,7 @@ const PricingCard = ({ image, Heading, subheading, price, oldprice, features, ba
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.5 }}
             className='group bg-neutral-900/50 backdrop-blur-md border border-neutral-800/50 flex flex-col rounded-3xl overflow-hidden hover:shadow-neutral-300/15 transition-all duration-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.05)] h-full'

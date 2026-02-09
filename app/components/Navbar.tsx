@@ -44,12 +44,12 @@ const Navbar = () => {
         duration: 0.3,
         ease: [0.22, 1, 0.36, 1]
       }}
-      className={`fixed top-0 left-0 right-0 z-50 w-full border-neutral-800/60 transition-all duration-500 border-b ${scrolled ? 'bg-black/60 backdrop-blur-xl ' : 'bg-neutral-900/40 backdrop-blur-md '}`}>
+      className={`fixed top-0 left-0 right-0 z-50 w-full border-neutral-800/60 transition-all duration-500 border-b ${mobileMenuOpen ? 'bg-black' : scrolled ? 'bg-black/60 backdrop-blur-xl' : 'bg-neutral-900/40 backdrop-blur-md'}`}>
       <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-[1440px] mx-auto px-6 lg:px-10 py-3 flex items-center justify-between relative">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{  duration: 0.3 }}
+          transition={{ duration: 0.3 }}
           whileHover="hover"
           className='cursor-pointer'>
           <Logo />
@@ -137,9 +137,9 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed inset-0 top-[60px] bg-black/98 backdrop-blur-xl lg:hidden z-40"
+            className="absolute inset-x-0 top-[60px] h-[calc(100vh-60px)] bg-black/70 backdrop-blur-3xl lg:hidden z-[100]"
           >
-            <div className="flex flex-col h-full p-6 gap-4">
+            <div className="flex flex-col h-full p-6 gap-4 ">
               <div className="flex flex-col gap-2 mt-4">
                 {['Home', 'Courses', 'Store'].map((item, idx) => (
                   <motion.button

@@ -62,9 +62,9 @@ function useMotionTemplate(strings: TemplateStringsArray, ...values: any[]) {
 
 const Features = () => {
     return (
-        <section className="py-32 bg-black px-6 md:px-10 overflow-hidden">
+        <section className="py-20 md:py-32 bg-black px-4 md:px-10 overflow-hidden">
             <div className="max-w-5xl mx-auto">
-                <div className="flex flex-col items-center mb-24 text-center">
+                <div className="flex flex-col items-center mb-16 md:mb-24 text-center">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -79,13 +79,13 @@ const Features = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-neutral-500 mt-5 text-md md:text-lg max-w-2xl leading-tight"
+                        className="text-neutral-500 mt-5 text-base md:text-lg max-w-2xl leading-relaxed px-4"
                     >
                         Stop following tutorials. Start building production-ready systems <br className='hidden md:block' /> that handle real-world scale.
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 auto-rows-auto md:auto-rows-[300px]">
+                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 auto-rows-auto">
 
                     <SpotlightCard span="md:col-span-3 lg:col-span-7 md:row-span-2">
                         <div className="relative z-10 h-full flex flex-col">

@@ -2,7 +2,7 @@ import PricingCard from "./PricingCard"
 
 const PricingPage = () => {
     return (
-        <section className='bg-black text-white relative py-32 md:py-48 px-6'>
+        <section className='bg-black text-white relative py-20 md:py-48 px-4 md:px-6'>
             <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto text-center">
                 <h2 className=" text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-semibold text-transparent bg-linear-to-b from-neutral-600 to-white bg-clip-text tracking-tighter">
                     Invest in your future

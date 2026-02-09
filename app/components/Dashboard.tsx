@@ -10,7 +10,7 @@ const Dashboard = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-        className='w-full h-full object-cover rounded-3xl pointer-events-none '
+        className='w-full h-full object-cover rounded-2xl md:rounded-3xl pointer-events-none'
         autoPlay
         loop
         playsInline

@@ -30,13 +30,13 @@ const alumniData = [
     },
     {
         name: "Suksham sharma",
-        photo: "/messi.png",
+        photo: "/suksham.png",
         package: "190K",
         company: "Apple"
     },
     {
         name: "Aakash singh",
-        photo: "/messi.png",
+        photo: "/aakash.png",
         package: "175K",
         company: "Netflix"
     }

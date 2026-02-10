@@ -44,7 +44,7 @@ const Navbar = () => {
         duration: 0.3,
         ease: [0.22, 1, 0.36, 1]
       }}
-      className={`fixed top-0 left-0 right-0 z-50 w-full border-neutral-800/60 transition-all duration-500 border-b ${mobileMenuOpen ? 'bg-black' : scrolled ? 'bg-black/60 backdrop-blur-xl' : 'bg-neutral-900/40 backdrop-blur-md'}`}>
+      className={`fixed top-0 left-0 right-0 z-[999] w-full border-neutral-800/60 transition-all duration-500 border-b ${mobileMenuOpen ? 'bg-black' : scrolled ? 'bg-black/80 backdrop-blur-xl' : 'bg-neutral-900/40 backdrop-blur-md'}`}>
       <div className="max-w-5xl xl:max-w-6xl 2xl:max-w-[1440px] mx-auto px-6 lg:px-10 py-3 flex items-center justify-between relative">
         <motion.div
           initial={{ opacity: 0 }}
